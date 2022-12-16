@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+node v18.12.1 에서 정상작동함을 확인하였습니다.
 
-## Available Scripts
+## 실행 방법
 
-In the project directory, you can run:
+- npm i 를 통해서 의존 모듈을 설치합니다.
+- npm run server:start 를 통해 json-server를 실행합니다.
+- npm run client:start 를 통해 react를 개발서버를 실행합니다.
 
-### `npm start`
+## 페이지별 설명
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 메인 페이지
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 등록한 모든 상품을 리스트 형태로 볼수 있습니다.
+- 상품을 클릭하면 상품상세 페이지로 이동합니다.
 
-### `npm test`
+### 상품 등록 페이지
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 상품을 등록할수 있습니다.
+- 모든 값과 이미지를 1개이상 등록해야 등록할수 있습니다.
+- 이미지의경우 첫번째 이미지가 대표이미지가 되고, x를 눌러 삭제할수 있습니다.
+- 등록하기 버튼을 누르면 정보가 입력된경우 등록하고 홈으로 이동합니다.
 
-### `npm run build`
+### 상품 상세 페이지
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 상품 상세 페이지에서는 이름, 브랜드, 사이즈, 상품설명, 이미지 등을 볼수 있습니다.
+- 이미지가 여러개인 경우 아래의 작은 이미지를 클릭하면 해당 이미지를 볼수 있습니다.
+- 상품 수정을 누를 경우 상품 수정 페이지로 이동합니다.
+- 상품 삭제를 누를 경우 상품을 삭제하고, 홈으로 이동합니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 상품 수정페이지
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 수정할 상품의 원래 정보가 입력되어있습니다.
+- 나머지 부분은 상품 등록페이지와 동일합니다.
