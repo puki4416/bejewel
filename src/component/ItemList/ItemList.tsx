@@ -1,4 +1,4 @@
-import ItemCard from "./Item/Item";
+import Item from "./Item/Item";
 import styles from "./ItemList.module.css";
 import common from "../../style/common.module.css";
 import { getItemsType } from "../../type/item";
@@ -19,7 +19,7 @@ const ItemList = ({ isLoading, isError, responseData }: ItemListProps) => {
       <h1 className={styles.title}>상품 리스트</h1>
       <div className={styles.itemList}>
         {responseData?.map((values) => {
-          return <ItemCard {...values} key={values.id} />;
+          return <Item {...values} key={values.id} />;
         })}
       </div>
     </div>
