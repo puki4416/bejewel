@@ -1,0 +1,21 @@
+.img {
+  width: 226px;
+  height: 226px;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.name {
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 17px;
+}
