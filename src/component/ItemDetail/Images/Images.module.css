@@ -1,0 +1,25 @@
+.mainBlock {
+  width: 500px;
+}
+
+.currentImage {
+  width: 500px;
+  height: 500px;
+  margin: 0 0 10px 0;
+}
+
+.miniImageBlock {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.miniImage {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.selectedImg {
+  opacity: 0.5;
+}
