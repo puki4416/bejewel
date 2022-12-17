@@ -134,7 +134,7 @@ const ItemFormContainer = () => {
         );
         queryClient.setQueryData(["contents", id], () => e.data);
         alert("수정되었습니다");
-        navigation("/");
+        navigation(`/product/${id}`);
       },
     }
   );
